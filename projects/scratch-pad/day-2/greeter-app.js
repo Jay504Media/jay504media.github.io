@@ -35,11 +35,20 @@
 
 function greeter(hour) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
-    // YOUR CODE ABOVE HERE //
+    // hour is 0-11 console.log Good Morning!
+    if (hour >= 0 && hour <= 11) {
+        console.log("Good Morning!");
+    // hour is 0-11 cosole.log Good Afternoon!
+    } else if (hour >= 12 && hour <= 16) {
+        console.log("Good Afternoon!");
+     // hour is 17-21 console.log Good Evening!   
+    } else if (hour >= 17 && hour <= 21) {
+        console.log("Good Evening!");
+    } else {
+        // hour is 22-24 console.log Good Night!
+        console.log("Good Night!");
+    }
+     // YOUR CODE ABOVE HERE //
 }
 
 /*
@@ -53,7 +62,7 @@ function greeter(hour) {
  * var hour = today.getHours();
  */
 
-greeter(11);
+greeter();
 
 
 
