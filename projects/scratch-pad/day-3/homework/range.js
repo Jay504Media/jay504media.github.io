@@ -23,10 +23,25 @@
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
-    
-    
+    //create an empty array
+    var result = [];
+    //if start is less than or equal
+    if (start <= end) {
+    //loop start to end inclusive
+    for (var i = start; i <= end; i++) {
+    //add integer to the result
+       result.push(i);
+     } 
+     //if start is greater than
+    } else {
+     //loop from start to end in reverse order inclusive
+      for (var i = start; i >= end; i--) {
+        result.push(i)
+      } 
+    }
+    //return the result 
+      return result;
+
     // YOUR CODE GOES ABOVE HERE //
 }
 
