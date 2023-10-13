@@ -72,7 +72,26 @@ function isCollection(value) {
  */ 
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
-    if(typeof value === 'string')
+    if(typeof value === 'string') {
+        return 'string';
+    } else if (Array.isArray(value)) {
+        return 'array';
+    } else if ( value === 'object') {
+        return 'object';
+    } else if ( value === 'undefined') {
+        return 'undefined';
+    } else if (typeof value === 'number') {
+        return 'number';
+    } else if (typeof value === 'boolean') {
+        return 'boolean';
+    } else if (value == null) {
+        return 'null';
+    } else if (typeof value === 'function') {
+        return 'function';
+    } else if (value instanceof Date) {
+        return 'date';
+    }
+    
     // YOUR CODE ABOVE HERE //
 }
 

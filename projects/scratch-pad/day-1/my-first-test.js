@@ -20,10 +20,11 @@ function print(value) {
   
   //print the value to the screen using console.log() 
   console.log(value);
-  // YOUR CODE ABOVE HERE //
+
 }
-
-
+  //output Who Dat!
+print('Who Dat!');
+// YOUR CODE ABOVE HERE //
 
 
 
